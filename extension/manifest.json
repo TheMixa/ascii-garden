@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ASCII Garden New Tab",
+  "version": "1.1.0",
+  "description": "A new tab page with animals made of keyboard characters. Click anywhere and they scatter.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["bookmarks", "favicon"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

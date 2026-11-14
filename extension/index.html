@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Tab</title>
+<link rel="icon" type="image/png" href="icons/icon32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<canvas id="garden" aria-hidden="true"></canvas>
+
+<nav class="bookmarks ui" id="bookmarks" aria-label="Bookmarks" hidden></nav>
+<div class="bm-menu ui" id="bm-menu" role="menu" hidden></div>
+
+<nav class="species ui" id="species" aria-label="Choose animal"></nav>
+
+<button class="gear ui" id="gear" type="button" aria-label="Settings" aria-expanded="false">
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+    <path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>
+  </svg>
+</button>
+
+<div class="panel ui" id="panel" hidden>
+  <label>Your name
+    <input id="set-name" type="text" maxlength="24" autocomplete="off" spellcheck="false">
+  </label>
+  <label>How many
+    <input id="set-density" type="range" min="0.4" max="2" step="0.1">
+  </label>
+  <label class="row">
+    <input id="set-trails" type="checkbox"> Character trails
+  </label>
+  <label class="row">
+    <input id="set-bookmarks" type="checkbox"> Bookmarks bar
+  </label>
+  <p class="keys">Keys 1 to 8 switch animals</p>
+</div>
+
+<main class="center">
+  <div class="orb" id="orb" aria-hidden="true"></div>
+  <h1 id="greet">Hello</h1>
+  <div class="clock" id="clock"></div>
+  <form class="search ui" id="search" autocomplete="off">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="text" placeholder="Search Google or type a URL" aria-label="Search" spellcheck="false">
+    <kbd>&#8629;</kbd>
+  </form>
+  <p class="hint" id="hint">click anywhere and they scatter</p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
