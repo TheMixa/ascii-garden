@@ -29,7 +29,7 @@ Click anywhere and they scatter.
 - **Character trails.** Everything leaves a fading wake of `$ { ) ~ #` behind it.
 - **Your bookmarks bar**, with folders and an overflow menu. Browsers hide their own bar on custom new tab pages, so this one draws it for you.
 - **A greeting that follows the clock**, from "Good morning" to "Still up?" at 3 am.
-- **Search box** that goes to Google, or straight to a site if you type a URL.
+- **Search box** that uses your browser's own search engine, or goes straight to a site if you type a URL.
 - **Settings** for your name, how many animals, trails and the bookmarks bar.
 - **Tiny and private.** About 40 KB of plain JavaScript. No frameworks, no build step, no tracking, no network requests.
 
@@ -51,7 +51,7 @@ You can also clone this repo and load the `extension/` folder directly.
   <img src="assets/hero.png" width="820" alt="ASCII Garden at night: butterflies around the greeting, search box and bookmarks bar">
 </p>
 
-**Permissions:** `bookmarks` (read only, to draw your bookmarks bar) and `favicon` (to show site icons next to them). Nothing ever leaves your computer.
+**Permissions:** `bookmarks` (read only, to draw your bookmarks bar), `favicon` (to show site icons next to them) and `search` (to send searches to your default search engine). Nothing ever leaves your computer. See the [privacy policy](PRIVACY.md).
 
 ## Keyboard
 
@@ -101,6 +101,7 @@ extension/   the extension: manifest, page, styles, script, icons
 docs/        the live demo, built from extension/ and served by GitHub Pages
 scripts/     build.py (demo page + zip) and make_icons.py
 assets/      images for this README
+store/       Chrome Web Store images and listing text
 download/    the ready-to-install zip
 ```
 

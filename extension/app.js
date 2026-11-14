@@ -937,14 +937,21 @@
   // search
   const form = document.getElementById('search');
   const q = document.getElementById('q');
+  // Web searches go through chrome.search, so they use the search engine the
+  // user picked in their browser settings (required for new tab extensions).
   form.addEventListener('submit', e => {
     e.preventDefault();
     const v = q.value.trim();
     if (!v) return;
-    let url;
+    let url = null;
     if (/^https?:\/\//i.test(v)) url = v;
     else if (!/\s/.test(v) && /^[\w-]+(\.[\w-]+)+(:\d+)?(\/\S*)?$/.test(v)) url = 'https://' + v;
-    else url = 'https://www.google.com/search?q=' + encodeURIComponent(v);
+
+    if (!url && typeof chrome !== 'undefined' && chrome.search && chrome.search.query) {
+      chrome.search.query({ text: v, disposition: 'CURRENT_TAB' });
+      return;
+    }
+    if (!url) url = 'https://duckduckgo.com/?q=' + encodeURIComponent(v);   // web demo only
     let framed = false;
     try { framed = window.top !== window.self; } catch (err) { framed = true; }
     if (framed) {

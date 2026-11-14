@@ -1,7 +1,8 @@
 """Build the two outputs from extension/:
 
   docs/index.html                     one self-contained page (the live demo on GitHub Pages)
-  dist/ascii-garden-extension.zip     the extension, ready for "Load unpacked" or a release
+  dist/ascii-garden-extension.zip     the extension in a folder, ready for "Load unpacked"
+  dist/ascii-garden-store.zip         the same files with manifest.json at the root, for the Chrome Web Store
 
 Usage:  python3 scripts/build.py
 """
@@ -32,4 +33,8 @@ with zipfile.ZipFile(dist / "ascii-garden-extension.zip", "w", zipfile.ZIP_DEFLA
     for name in files:
         z.write(ext / name, f"ascii-garden-extension/{name}")
 
-print("built docs/index.html and dist/ascii-garden-extension.zip")
+with zipfile.ZipFile(dist / "ascii-garden-store.zip", "w", zipfile.ZIP_DEFLATED) as z:
+    for name in files:
+        z.write(ext / name, name)  # Chrome Web Store wants manifest.json at the zip root
+
+print("built docs/index.html, dist/ascii-garden-extension.zip and dist/ascii-garden-store.zip")

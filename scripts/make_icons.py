@@ -44,6 +44,8 @@ def render(size, background):
 
 for s in (16, 32):
     render(s, background=False).save(out / f"icon{s}.png")
-for s in (48, 128):
-    render(s, background=True).save(out / f"icon{s}.png")
+render(48, background=True).save(out / "icon48.png")
+icon128 = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+icon128.paste(render(96, background=True), (16, 16))
+icon128.save(out / "icon128.png")
 print("icons done")
