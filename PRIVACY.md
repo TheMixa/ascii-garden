@@ -2,7 +2,7 @@
 
 _Last updated: 14 November 2026_
 
-ASCII Garden New Tab ("the extension") does not collect, store, sell or share any personal data.
+ASCII Garden ("the extension") does not collect, store, sell or share any personal data.
 
 ## What the extension accesses
 

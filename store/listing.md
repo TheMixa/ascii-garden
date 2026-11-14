@@ -1,6 +1,6 @@
 # Chrome Web Store listing kit
 
-Everything needed to submit **ASCII Garden New Tab** to the Chrome Web Store.
+Everything needed to submit **ASCII Garden** to the Chrome Web Store.
 
 ## Steps
 
@@ -14,7 +14,7 @@ Everything needed to submit **ASCII Garden New Tab** to the Chrome Web Store.
 
 **Name** (comes from the manifest)
 ```
-ASCII Garden New Tab
+ASCII Garden
 ```
 
 **Summary** (max 132 characters)

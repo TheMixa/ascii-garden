@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "ASCII Garden New Tab",
-  "version": "1.2.0",
+  "name": "ASCII Garden",
+  "version": "1.2.1",
   "description": "A new tab page where animals made of keyboard characters drift around. Click anywhere and they scatter.",
   "icons": {
     "16": "icons/icon16.png",
