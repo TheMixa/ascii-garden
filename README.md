@@ -7,7 +7,7 @@
 **A new tab page where little animals made of keyboard characters drift across your screen.**<br>
 Click anywhere and they scatter.
 
-[**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/releases/latest) &nbsp;·&nbsp; [How it works](#how-it-works)
+[**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip) &nbsp;·&nbsp; [How it works](#how-it-works)
 
 ![Manifest V3](https://img.shields.io/badge/manifest-v3-4f9bff?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-7fdc5a?style=flat-square)
@@ -39,13 +39,17 @@ Click anywhere and they scatter.
 
 ## Install
 
-1. Download **`ascii-garden-extension.zip`** from the [latest release](https://github.com/TheMixa/ascii-garden/releases/latest) and unzip it.
+1. Download **[`ascii-garden-extension.zip`](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip)** and unzip it.
 2. Open `chrome://extensions` (or `brave://extensions`, `edge://extensions`).
 3. Turn on **Developer mode**.
 4. Click **Load unpacked** and pick the `ascii-garden-extension` folder.
 5. Open a new tab.
 
 You can also clone this repo and load the `extension/` folder directly.
+
+<p align="center">
+  <img src="assets/hero.png" width="820" alt="ASCII Garden at night: butterflies around the greeting, search box and bookmarks bar">
+</p>
 
 **Permissions:** `bookmarks` (read only, to draw your bookmarks bar) and `favicon` (to show site icons next to them). Nothing ever leaves your computer.
 
@@ -97,9 +101,10 @@ extension/   the extension: manifest, page, styles, script, icons
 docs/        the live demo, built from extension/ and served by GitHub Pages
 scripts/     build.py (demo page + zip) and make_icons.py
 assets/      images for this README
+download/    the ready-to-install zip
 ```
 
-Run `python3 scripts/build.py` to rebuild `docs/index.html` and `dist/ascii-garden-extension.zip` after changing anything in `extension/`.
+Run `python3 scripts/build.py` to rebuild `docs/index.html` and `dist/ascii-garden-extension.zip` after changing anything in `extension/`, then copy the zip into `download/`.
 
 ## Credits
 
