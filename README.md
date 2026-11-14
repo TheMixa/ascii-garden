@@ -7,7 +7,7 @@
 **A new tab page where little animals made of keyboard characters drift across your screen.**<br>
 Click anywhere and they scatter.
 
-[**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip) &nbsp;·&nbsp; [How it works](#how-it-works)
+[**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip) &nbsp;·&nbsp; [Demo video](https://youtu.be/k8TQqjueMi8) &nbsp;·&nbsp; [How it works](#how-it-works)
 
 ![Manifest V3](https://img.shields.io/badge/manifest-v3-4f9bff?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-7fdc5a?style=flat-square)
@@ -35,6 +35,14 @@ Click anywhere and they scatter.
 
 <p align="center">
   <img src="assets/species.png" alt="All seven animals and the Mix mode">
+</p>
+
+## Demo video
+
+<p align="center">
+  <a href="https://youtu.be/k8TQqjueMi8">
+    <img src="assets/video-preview.jpg" width="820" alt="Watch the 30 second ASCII Garden demo on YouTube">
+  </a>
 </p>
 
 ## Install
