@@ -7,8 +7,9 @@
 **A new tab page where little animals made of keyboard characters drift across your screen.**<br>
 Click anywhere and they scatter.
 
-[**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip) &nbsp;·&nbsp; [Demo video](https://youtu.be/k8TQqjueMi8) &nbsp;·&nbsp; [How it works](#how-it-works)
+[**Chrome Web Store**](https://chromewebstore.google.com/detail/ohapicmgbfnlnomnpoadjfegfffekcio) &nbsp;·&nbsp; [**Live demo**](https://themixa.github.io/ascii-garden/) &nbsp;·&nbsp; [**Download**](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip) &nbsp;·&nbsp; [Demo video](https://youtu.be/k8TQqjueMi8) &nbsp;·&nbsp; [How it works](#how-it-works)
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-install-4f9bff?style=flat-square)](https://chromewebstore.google.com/detail/ohapicmgbfnlnomnpoadjfegfffekcio)
 ![Manifest V3](https://img.shields.io/badge/manifest-v3-4f9bff?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-7fdc5a?style=flat-square)
 ![Works in](https://img.shields.io/badge/works_in-Chrome_·_Brave_·_Edge-ffcc33?style=flat-square)
@@ -46,6 +47,10 @@ Click anywhere and they scatter.
 </p>
 
 ## Install
+
+**Easiest:** install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/ohapicmgbfnlnomnpoadjfegfffekcio). It works in Chrome, Brave and Edge.
+
+**Or install it manually:**
 
 1. Download **[`ascii-garden-extension.zip`](https://github.com/TheMixa/ascii-garden/raw/main/download/ascii-garden-extension.zip)** and unzip it.
 2. Open `chrome://extensions` (or `brave://extensions`, `edge://extensions`).
